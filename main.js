@@ -235,8 +235,9 @@ function Bodycreator (id, mainContent, sideMenuContent, sideMenuLogo) {
  
     this.contentScroll = function () {
         let xCoord = window.pageXOffset;
+        let calculate = this.menuWrapSize * (this.content.length - 5); 
 
-        if ( xCoord <= this.menuWrapSize ) {
+        if ( xCoord <= calculate) {
         window.scrollBy(this.menuWrapSize, 0);
         } 
         else  {
