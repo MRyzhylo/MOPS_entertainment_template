@@ -39,6 +39,18 @@ body {
     filter: brightness(0.4);
 }
 
+.main-logo-wrap {
+    width: 10%;
+    height: 5%;
+    position: fixed;
+    top: 0%;
+    left: 2%;
+}
+
+.main-logo {
+    width: 100%;
+}
+
 .navigation-wrap {
     display: flex;
     position: fixed;

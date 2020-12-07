@@ -143,6 +143,17 @@ function Bodycreator (id, mainContent, sideMenuContent, sideMenuLogo) {
     }.bind(this);
     this.windowWidthCheker();
 
+    this.logoWrapDiv = document.createElement('div');
+    this.logoWrapDiv.className = 'main-logo-wrap';
+    this.linkWrapLogo = document.createElement('a');
+    this.linkWrapLogo.href = '#';
+    this.logoImgWrap = document.createElement('img');
+    this.logoImgWrap.className = 'main-logo';
+    this.logoImgWrap.src = logoUrl;
+    this.linkWrapLogo.appendChild(this.logoImgWrap);
+    this.logoWrapDiv.appendChild(this.linkWrapLogo);
+    this.container.appendChild(this.logoWrapDiv);
+
     this.navDiv = document.createElement('div');
     this.navDiv.className = 'navigation-wrap';
     this.navUl = document.createElement('ul');
